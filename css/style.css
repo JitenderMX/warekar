@@ -1,0 +1,336 @@
+/* ------------------------------ 
+    ************** Table Of Content  ************** 
+                 --------------------
+                 
+01. =Google Font
+02. =Base
+03. =Section padding margin
+04. =Heading
+05. =Main Button
+06. =Header
+07. =Footer
+08. =BreadCrum
+
+
+
+
+Font Size System 
+-----------------
+10px / 12px / 16px / 18px / 20px / 24px / 30px / 36px / 44px / 52px / 62px / 74px / 86px / 98px 
+
+Spacing System 
+-----------------
+2px / 4px / 8px / 12px / 16px / 24px / 32px / 48px / 64px / 80px / 96px / 128px  
+
+-------------------------------------------------------*/
+
+
+/* 01. Google Font Start ------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ------------- Google Font End ------------- */
+
+
+/* 02.base Start ------------------------------ */
+
+:root {
+    --th-color-1: #6A9FD2;
+    --th-color-2: #FFFFFF;
+    --th-color-3: #000000;
+    --th-font-1: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--th-color-3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--th-color-1);
+    font-family: var(--th-font-1);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 72.856px */
+    text-transform: capitalize;
+}
+
+p {
+    color: var(--th-color-3);
+    font-family: var(--th-font-1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+.th-btn {
+    text-align: center;
+    font-family: var(--th-font-1);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0.5px;
+    padding: 15px 22px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.th-btn-1 {
+    color: var(--th-color-2);
+    border: 2px solid var(--th-color-2);
+}
+
+.th-btn-1 .fas {
+    color: var(--th-color-2);
+}
+
+.th-btn-2 {
+    color: var(--th-color-3);
+    border: 2px solid var(--th-color-1);
+}
+
+.th-btn-2 .fas {
+    color: var(--th-color-1);
+}
+
+.th-h1 {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.th-p {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 29.626px */
+}
+.sec-p-100{
+    padding: 100px 0;
+}
+/* <i class="fas fa-circle"></i> */
+
+/* Thank You Page  */
+.thank-row {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-row img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.container-xxl {
+    max-width: 1440px !important;
+    margin: auto;
+}
+
+/* Scroll Bar style start 
+::-webkit-scrollbar {
+    width
+    width: 10px;
+}
+
+::-webkit-scrollbar:hover {
+    width: 50px;
+}
+
+::-webkit-scrollbar-track {
+    Track
+    background-color: ;
+}
+
+::-webkit-scrollbar-thumb {
+    Handle
+    background-color: ;
+}
+*/
+
+/* Scroll Bar style End */
+
+
+/* ------------- base End ------------- */
+
+
+/* 04. Header Scetion Start ------------------------------ */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#header .navbar-brand img {
+    max-width: 200px;
+}
+
+.navbar-expand-lg .navbar-nav {
+    align-items: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: var(--th-color-2);
+    text-align: center;
+    font-family: var(--th-font-1);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 119.7% */
+    text-decoration-line: none;
+    padding-left: 30px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+    text-decoration: underline;
+}
+
+/* ------------- Header Scetion  End ------------- */
+
+/* 05. Banner Scetion Start ------------------------------ */
+.banner {
+    position: relative;
+}
+
+.carousel-inner {
+    height: 100vh;
+}
+
+.carousel-item {
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.banner .banner-inner {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding-bottom: 40px;
+}
+
+.banner .banner-inner .banner-text .th-p {
+    max-width: 900px;
+    margin-top: 20px;
+    line-height: 140%;
+}
+
+/* ------------- Banner Scetion  End ------------- */
+
+
+/* 06. Counter Scetion Start ------------------------------ */
+.counter-box{
+    padding: 100px 0px;
+}
+.counter-box.mid{
+border-left: 1px solid var(--th-color-3);
+border-right: 1px solid var(--th-color-3);
+}
+.counter-box .th-h1 {
+    color: var(--th-color-1);
+    font-size: 130px;
+    text-align: center;
+}
+.counter-box .th-p {
+    font-size: 20px;    
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--th-color-3);
+}
+
+/* ------------- Counter Scetion End ------------- */
+
+/* 07.Empower Brand Scetion Start ------------------------------ */
+.empower-brand{
+    background-color: var(--th-color-1);
+}
+.brand-h{
+    border-bottom: 2px solid var(--th-color-2);
+}
+/* ------------- Empower Brand Scetion End ------------- */
+
+/* 08.One Stop Scetion Start ------------------------------ */
+.one-stop-studio .th-h1{
+    color: var(--th-color-1);
+}
+.one-stop-studio .th-p{
+    color: var(--th-color-3);
+}
+/* ------------- One Stop Scetion End ------------- */
+
+/* 09.INDUSTRIES WE WORK IN Start ------------------------------ */
+.industries-h .fas{
+    color: var(--th-color-1);
+}
+.industries-h .th-h1{
+    color: var(--th-color-3);
+    font-size: 18px;
+}
+.industries-box .th-h1{
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--th-color-3);
+}
+.industries-box .th-p{
+    font-size: 16px;
+    color: var(--th-color-3);
+}
+.industries .carousel-indicators{
+    /* bottom: 75px; */
+    transform: translateY(150%);
+}
+.industries .carousel-inner{
+ height: auto !important;
+}
+.industries .carousel-control-next,
+.industries .carousel-control-prev{
+    width: auto !important;
+    top: auto !important;
+    transform: translateY(110%);
+}
+.industries .carousel-control-next .far,
+.industries .carousel-control-prev .far{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid var(--th-color-3);
+    color: var(--th-color-3);
+    background-color: var(--th-color-2);
+}
+.industries .carousel-indicators button[data-bs-target="#carouselExampleIndicators"]{
+    width: 20px !important;
+    height: 20px !important;
+    background-color: var(--th-color-1) !important;
+    border-radius: 50% !important;
+}
+
+/* ------------- INDUSTRIES WE WORK IN End ------------- */
+
+
