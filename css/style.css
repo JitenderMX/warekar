@@ -120,9 +120,11 @@ p {
     line-height: 140%;
     /* 29.626px */
 }
-.sec-p-100{
+
+.sec-p-100 {
     padding: 100px 0;
 }
+
 /* <i class="fas fa-circle"></i> */
 
 /* Thank You Page  */
@@ -140,9 +142,15 @@ p {
     max-width: 200px;
 }
 
+section {
+    overflow-x: hidden;
+}
+
 .container-xxl {
     max-width: 1440px !important;
     margin: auto;
+    overflow-x: hidden;
+
 }
 
 /* Scroll Bar style start 
@@ -244,20 +252,23 @@ p {
 
 
 /* 06. Counter Scetion Start ------------------------------ */
-.counter-box{
+.counter-box {
     padding: 100px 0px;
 }
-.counter-box.mid{
-border-left: 1px solid var(--th-color-3);
-border-right: 1px solid var(--th-color-3);
+
+.counter-box.mid {
+    border-left: 1px solid var(--th-color-3);
+    border-right: 1px solid var(--th-color-3);
 }
+
 .counter-box .th-h1 {
     color: var(--th-color-1);
     font-size: 130px;
     text-align: center;
 }
+
 .counter-box .th-p {
-    font-size: 20px;    
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     color: var(--th-color-3);
@@ -266,55 +277,66 @@ border-right: 1px solid var(--th-color-3);
 /* ------------- Counter Scetion End ------------- */
 
 /* 07.Empower Brand Scetion Start ------------------------------ */
-.empower-brand{
+.empower-brand {
     background-color: var(--th-color-1);
 }
-.brand-h{
+
+.brand-h {
     border-bottom: 2px solid var(--th-color-2);
 }
+
 /* ------------- Empower Brand Scetion End ------------- */
 
 /* 08.One Stop Scetion Start ------------------------------ */
-.one-stop-studio .th-h1{
+.one-stop-studio .th-h1 {
     color: var(--th-color-1);
 }
-.one-stop-studio .th-p{
+
+.one-stop-studio .th-p {
     color: var(--th-color-3);
 }
+
 /* ------------- One Stop Scetion End ------------- */
 
 /* 09.INDUSTRIES WE WORK IN Start ------------------------------ */
-.industries-h .fas{
+.industries-h .fas {
     color: var(--th-color-1);
 }
-.industries-h .th-h1{
+
+.industries-h .th-h1 {
     color: var(--th-color-3);
     font-size: 18px;
 }
-.industries-box .th-h1{
+
+.industries-box .th-h1 {
     font-size: 28px;
     font-weight: 400;
     color: var(--th-color-3);
 }
-.industries-box .th-p{
+
+.industries-box .th-p {
     font-size: 16px;
     color: var(--th-color-3);
 }
-.industries .carousel-indicators{
+
+.industries .carousel-indicators {
     /* bottom: 75px; */
     transform: translateY(150%);
 }
-.industries .carousel-inner{
- height: auto !important;
+
+.industries .carousel-inner {
+    height: auto !important;
 }
+
 .industries .carousel-control-next,
-.industries .carousel-control-prev{
+.industries .carousel-control-prev {
     width: auto !important;
     top: auto !important;
     transform: translateY(110%);
 }
+
 .industries .carousel-control-next .far,
-.industries .carousel-control-prev .far{
+.industries .carousel-control-prev .far {
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -324,7 +346,8 @@ border-right: 1px solid var(--th-color-3);
     color: var(--th-color-3);
     background-color: var(--th-color-2);
 }
-.industries .carousel-indicators button[data-bs-target="#carouselExampleIndicators"]{
+
+.industries .carousel-indicators button[data-bs-target="#carouselExampleIndicators"] {
     width: 20px !important;
     height: 20px !important;
     background-color: var(--th-color-1) !important;
@@ -334,3 +357,171 @@ border-right: 1px solid var(--th-color-3);
 /* ------------- INDUSTRIES WE WORK IN End ------------- */
 
 
+/* 10.HOW WE WORK IN Start ------------------------------ */
+.how-we-work {
+    background-color: var(--th-color-1);
+}
+
+.how-we-work .how-we-work-h h6.th-h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.how-we-work .how-we-work-h h2.th-h1 {
+    font-size: 48px;
+    font-weight: 800;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.how-we-work-box {
+    margin-top: 100px;
+}
+
+.work-box-1 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--th-color-2);
+}
+
+.work-box-2 {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    background-color: var(--th-color-3);
+    color: var(--th-color-2);
+    font-size: 28px;
+    font-weight: 400;
+    font-family: var(--th-font-1);
+}
+
+.work-box-text .th-h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* ------------- HOW WE WORK IN End ------------- */
+
+
+/* 11.Testimonial Section Start ------------------------------ */
+
+/* Default slide */
+.center-slider .slick-slide {
+    background-color: var(--th-color-1);
+    color: #FFF;
+    height: 200px;
+    min-height: 600px;
+    margin: 0 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.7);
+    transition: all 0.4s ease-in-out;
+}
+
+.center-slider .slick-slide,
+.center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"] {
+    transform: scale(0.7, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+
+/* Active center slide (You can change anything here for cenetr slide)*/
+.center-slider .slick-center,
+.center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"])+.slick-cloned[aria-hidden="true"] {
+    transform: scale(1.5);
+    background-color: var(--th-color-1);
+}
+
+.center-slider .slick-current.slick-active {
+    transform: scale(1.2, 1.2);
+    background-color: var(--th-color-1);
+}
+
+/* .center-slider .slick-next,
+.center-slider .slick-prev {
+    z-index: 5;
+}
+
+.center-slider .slick-next {
+    right: 15px;
+}
+
+.center-slider .slick-prev {
+    left: 15px;
+}
+
+.center-slider .slick-next:before,
+.center-slider .slick-prev:before {
+    color: #000;
+    font-size: 26px;
+} */
+
+.center-arrow {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    /* transform: translateY(-50%); */
+}
+
+.center-arrow .far {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid var(--th-color-3);
+    color: var(--th-color-3);
+    background-color: var(--th-color-2);
+    cursor: pointer;
+}
+
+.testimonial-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.testimonial-box .test-img img {
+    width: 70px !important;
+}
+
+.testimonial-box .test-text {
+    margin: 20px 0;
+}
+
+.testimonial-box .test-text .th-p {
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+
+}
+
+.testimonial-box .test-title h4 {
+    font-family: var(--th-font-1);
+    color: var(--th-color-2);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 120%;
+    text-align: center;
+}
+
+.testimonial-box .test-title h5 {
+    font-family: var(--th-font-1);
+    color: var(--th-color-2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+}
+
+/* ------------- Testimonial Section End ------------- */
