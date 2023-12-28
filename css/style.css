@@ -37,7 +37,8 @@ Spacing System
 :root {
     --th-color-1: #6A9FD2;
     --th-color-2: #FFFFFF;
-    --th-color-3: #000000;
+    --th-color-3: #191919;
+    --th-color-4: #4F4F4F;
     --th-font-1: 'Inter', sans-serif;
 }
 
@@ -52,13 +53,11 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--th-color-1);
     font-family: var(--th-font-1);
     font-style: normal;
     font-weight: 700;
-    line-height: 110%;
-    /* 72.856px */
-    text-transform: capitalize;
+    line-height: 120%;
+    text-transform: uppercase;
 }
 
 p {
@@ -66,7 +65,7 @@ p {
     font-family: var(--th-font-1);
     font-size: 18px;
     font-weight: 400;
-    line-height: 110%;
+    line-height: 120%;
 }
 
 .th-btn {
@@ -149,8 +148,7 @@ section {
 .container-xxl {
     max-width: 1440px !important;
     margin: auto;
-    overflow-x: hidden;
-
+    /* overflow-x: hidden; */
 }
 
 /* Scroll Bar style start 
@@ -204,16 +202,42 @@ section {
     font-family: var(--th-font-1);
     font-size: 20px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 110%;
     /* 119.7% */
     text-decoration-line: none;
     padding-left: 30px;
 }
 
+#header.logo-white img#nav-logo-blue {
+    display: none;
+}
+
+#header.logo-blue img#nav-logo-white {
+    display: none;
+}
+
+#header.logo-blue .navbar-expand-lg .navbar-nav .nav-link {
+    color: var(--th-color-3);
+}
+
+#header.logo-blue .navbar-expand-lg .navbar-nav .nav-link.active {
+    color: var(--th-color-1);
+}
+
 .navbar-expand-lg .navbar-nav .nav-link.active {
     text-decoration: underline;
 }
+
+#header.logo-blue .th-btn-1 {
+    color: var(--th-color-1);
+    border: 2px solid var(--th-color-1);
+}
+
+#header.logo-blue .th-btn-1 .fas {
+    color: var(--th-color-1);
+}
+
 
 /* ------------- Header Scetion  End ------------- */
 
@@ -525,3 +549,265 @@ section {
 }
 
 /* ------------- Testimonial Section End ------------- */
+
+/* 12.About Banner Section Start ------------------------------ */
+.about-banner {
+    background-color: var(--th-color-1);
+    padding: 150px 0 100px 0;
+    text-align: center;
+}
+
+/* ------------- About Banner Section End ------------- */
+
+/* 13.Founder Banner Section Start ------------------------------ */
+
+
+.founder-text .th-h1 {
+    color: var(--th-color-1);
+}
+
+/* ------------- Founder Banner Section End ------------- */
+
+
+/* 14.Experts Section Start ------------------------------ */
+.experts {
+    border-top: 1px solid var(--th-color-3);
+    position: relative;
+}
+
+.experts .experts-heading {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: var(--th-color-2);
+}
+
+.experts .th-h1 {
+    text-align: center;
+}
+
+.experts .th-h1 .span-1 {
+    color: var(--th-color-4);
+}
+
+.experts .th-h1 .span-2 {
+    color: var(--th-color-1);
+}
+
+.expert-profile {
+    padding: 250px 0 50px 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expert-profile.mid {
+    border-left: 1px solid #928D8D;
+    border-right: 1px solid #928D8D;
+}
+
+.expert-profile .exp-img img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.expert-profile h6 {
+    color: #4F4F4F;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+}
+
+.expert-profile a .fab {
+    color: var(--th-color-1);
+    font-size: 28px;
+}
+
+/* ------------- Experts Section End ------------- */
+
+
+
+/* 15.Working With As Section Start ------------------------------ */
+.working {
+    background-color: var(--th-color-1);
+}
+
+.working-box {
+    margin-top: 10px;
+    margin-bottom: 80px;
+    padding: 0 20px;
+}
+
+.working-box h6 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.working-box .th-h1 {
+    color: #fff;
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+/* ------------- Working With As Section End ------------- */
+
+/* 16.About Testimonials Section Start ------------------------------ */
+.about-testimonial {
+    position: relative;
+}
+
+.about-test-img img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.row.line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: auto;
+    transform: translateX(-50%);
+}
+
+.row.line .col-3 {
+    height: 100%;
+    border-left: 0.5px solid #4f4f4f0f;
+    border-right: 0.5px solid #4f4f4f0f;
+}
+
+.about-testimonial .th-h1 {
+    text-align: center;
+    color: var(--th-color-1);
+}
+
+.about-test-box {
+    position: relative;
+    z-index: 1;
+}
+
+.about-test-text .th-p {
+    font-family: var(--th-font-1);
+    color: var(--th-color-4);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 140%;
+    background-color: var(--th-color-2);
+}
+
+.about-test-text .quote-left,
+.about-test-text .quote-right {
+    font-family: var(--th-font-1);
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 120%;
+    color: var(--th-color-4);
+}
+
+.about-test-box h5 {
+    background-color: var(--th-color-2);
+}
+
+/* ------------- About Testimonials Section End ------------- */
+
+
+/* 17.Project Banner Section Start ------------------------------ */
+.project-banner {
+    padding: 150px 0 100px 0;
+    text-align: center;
+}
+
+.project-banner .th-h1 .span-1 {
+    color: #AEAEAE;
+}
+
+.project-banner .th-h1 .span-2 {
+    color: #6A9FD2;
+}
+
+.project-banner .th-p {
+    color: var(--th-color-3);
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.all-pro-left .th-h1 {
+    list-style: none;
+    color: var(--th-color-1);
+    font-size:18px;
+}
+
+.all-pro-right .th-h1 {
+    list-style: none;
+    color: #AEAEAE;
+    font-size:18px;
+}
+.all-project .pro-box{
+    position: relative;
+    cursor: pointer;
+}
+.all-project .pro-box .th-h1{
+font-size: 32px;
+}
+.all-project .pro-box .pro-img img{
+    width: 100%;
+}
+.all-project .pro-box .pro-text{
+    width: 100%;
+    height: 100%;
+    padding: 50px 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+.all-project .pro-box:hover .pro-text{
+    opacity: 1;
+    visibility: visible;
+}
+.all-project .pro-box ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------- Project Banner Section End ------------- */
+
+/* 18.Project Banner Section Start ------------------------------ */
+.service{
+    background-color: var(--th-color-1);
+}
+.service .service-box{
+    padding: 30px;
+    border: 1px solid var(--th-color-2);
+    border-radius: 4px;
+}
+.service .service-box .service-img img{
+    width: 100%;
+    max-width: 80px;
+}
+.service .service-box h4.th-h1{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 120%; /* 48px */
+}
+.service .service-box .th-p p{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
+/* ------------- Project Banner Section End ------------- */
