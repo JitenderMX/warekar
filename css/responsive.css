@@ -1,3 +1,10 @@
+:root {
+    --th-color-1: #6A9FD2;
+    --th-color-2: #FFFFFF;
+    --th-color-3: #000000;
+    --th-font-1: 'Inter', sans-serif;
+}
+
 /* Extra large devices (1200px and down) */
 
 @media screen and (max-width: 1200px) {}
@@ -10,9 +17,46 @@
 
 /* Medium devices (768px and down) */
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .center-arrow {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 100px;
+        margin-top: 30px;
+        /* transform: translateY(-50%); */
+    }
+    .center-slider .slick-slide {
+        background-color: var(--th-color-1);
+        color: #FFF;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 0 0 0;
+        transform: scale(1);
+    }
+    
+    .center-slider .slick-slide,
+    .center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"] {
+        transform: scale(1, 1);
+    }
+    
+    /* Active center slide (You can change anything here for cenetr slide)*/
+    .center-slider .slick-center,
+    .center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"])+.slick-cloned[aria-hidden="true"] {
+        transform: scale(1);
+    }
+    
+    .center-slider .slick-current.slick-active {
+        transform: scale(1, 1);
+    }
+    .slick-track{
+        background-color: var(--th-color-1);
+    }
+}
 
 
 /* Small devices (576px and down) */
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+  
+    
+}

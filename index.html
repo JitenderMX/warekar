@@ -530,11 +530,11 @@
 
     <!-- Testimonial Section Start -->
     <section class="testional sec-p-100">
-        <div class="container-xxl">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <div class="center-slider">
-                        <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-sm-flex justify-content-center align-items-center">
                             <div class="testimonial-box">
                                 <div class="test-img"><img src="image/testimonial-1.png" class="" alt=""></div>
                                 <div class="test-text">
@@ -548,7 +548,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-sm-flex justify-content-center align-items-center">
                             <div class="testimonial-box">
                                 <div class="test-img"><img src="image/testimonial-2.png" class="" alt=""></div>
                                 <div class="test-text">
@@ -562,7 +562,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-sm-flex justify-content-center align-items-center">
                             <div class="testimonial-box">
                                 <div class="test-img"><img src="image/testimonial-3.png" class="" alt=""></div>
                                 <div class="test-text">
@@ -576,7 +576,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-sm-flex justify-content-center align-items-center">
                             <div class="testimonial-box">
                                 <div class="test-img"><img src="image/testimonial-1.png" class="" alt=""></div>
                                 <div class="test-text">
@@ -590,7 +590,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-sm-flex justify-content-center align-items-center">
                             <div class="testimonial-box">
                                 <div class="test-img"><img src="image/testimonial-2.png" class="" alt=""></div>
                                 <div class="test-text">
@@ -604,7 +604,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-sm-flex justify-content-center align-items-center">
                             <div class="testimonial-box">
                                 <div class="test-img"><img src="image/testimonial-3.png" class="" alt=""></div>
                                 <div class="test-text">
@@ -666,19 +666,18 @@
                 arrows: false,
                 infinite:true,
                 dots: false,
-                speed: 300,
+                speed: 300, 
                 centerPadding: '20px',
                 infinite: true,
                 autoplaySpeed: 5000,
                 autoplay: true,
                 responsive: [
                     {
-                        breakpoint: 576,
+                        breakpoint: 768,
                         settings: {
-                            arrows: false,
-                            centerMode: true,
                             centerPadding: '40px',
-                            slidesToShow: 1
+                            slidesToShow: 1,
+                            centerMode: false
                         }
                     }
                 ]
