@@ -43,7 +43,7 @@
 
 </head>
 
-<body id="about-page">
+<body id="project-page">
 
     <!-- Header Section Start -->
     <header id="header" class="logo-blue">
@@ -227,122 +227,6 @@
 
     <!-- ========== main Js ========== -->
     <script src="js/main.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.center-slider').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                centerMode: true,
-                arrows: false,
-                infinite: true,
-                dots: false,
-                speed: 300,
-                centerPadding: '20px',
-                infinite: true,
-                autoplaySpeed: 5000,
-                autoplay: true,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            centerPadding: '40px',
-                            slidesToShow: 1,
-                            centerMode: false
-                        }
-                    }
-                ]
-            });
-            $('#center-arrow-prev').on('click', function () {
-                $('.center-slider').slick('slickPrev');
-            });
-
-            $('#center-arrow-next').on('click', function () {
-                $('.center-slider').slick('slickNext');
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            function checkCarouselState() {
-                var currentIndex = $('#carouselExampleIndicators .carousel-item.active').index();
-                var totalItems = $('#carouselExampleIndicators .carousel-item').length - 1;
-
-                if (currentIndex === 0) {
-                    $('#carouselExampleIndicators .carousel-control-prev').hide();
-                    $('#carouselExampleIndicators .carousel-control-next').show();
-                } else if (currentIndex === totalItems) {
-                    $('#carouselExampleIndicators .carousel-control-prev').show();
-                    $('#carouselExampleIndicators .carousel-control-next').hide();
-                } else {
-                    $('#carouselExampleIndicators .carousel-control-prev').show();
-                    $('#carouselExampleIndicators .carousel-control-next').show();
-                }
-            }
-
-            $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
-                checkCarouselState();
-            });
-            $(window).on('load', function () {
-                checkCarouselState();
-            });
-        });
-    </script>
-    <script>
-        // Function to check if an element is in the viewport
-        function isInViewport(element) {
-            var rect = element.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        // Check if the .counter section is in the viewport on scroll
-        $(window).on('scroll', function () {
-            if (isInViewport($('.counter')[0])) {
-                // Iterate over each .th-h1 element and animate the counter
-                $('.th-h1').each(function () {
-                    var countTo = $(this).attr('data-count');
-                    $(this).prop('Counter', 0).animate({
-                        Counter: countTo
-                    }, {
-                        duration: 1000, // Adjust the duration as needed
-                        easing: 'swing',
-                        step: function (now) {
-                            $(this).text(Math.ceil(now));
-                        }
-                    });
-                });
-                // Unbind the scroll event to prevent multiple animations
-                $(window).off('scroll');
-            }
-        });
-
-        // Trigger the scroll event to check if the section is initially in the viewport
-        $(window).scroll();
-    </script>
-    <!-- <script>
-        $(document).ready(function() {
-          // Check if the .counter section is visible
-          if ($('.counter').is(':visible')) {
-            // Iterate over each .th-h1 element and animate the counter
-            $('.th-h1').each(function() {
-              var countTo = $(this).attr('data-count');
-              $(this).prop('Counter', 0).animate({
-                Counter: countTo
-              }, {
-                duration: 3000, // Adjust the duration as needed
-                // easing: 'swing',
-                step: function(now) {
-                  $(this).text(Math.ceil(now));
-                }
-              });
-            });
-          }
-        });
-      </script> -->
 </body>
 
 </html>

@@ -186,10 +186,16 @@ section {
     left: 0;
     width: 100%;
     z-index: 100;
+    transition: all .5s;
 }
 
 #header .navbar-brand img {
     max-width: 200px;
+    transition: all .5s;
+}
+
+#header.active-bg .navbar-brand img {
+    max-width: 130px;
 }
 
 .navbar-expand-lg .navbar-nav {
@@ -213,8 +219,17 @@ section {
     display: none;
 }
 
+
+#header.logo-white.active-bg {
+    background-color: var(--th-color-1);
+}
+
 #header.logo-blue img#nav-logo-white {
     display: none;
+}
+
+#header.logo-blue.active-bg {
+    background-color: var(--th-color-2);
 }
 
 #header.logo-blue .navbar-expand-lg .navbar-nav .nav-link {
@@ -283,6 +298,7 @@ section {
 .counter-box.mid {
     border-left: 1px solid var(--th-color-3);
     border-right: 1px solid var(--th-color-3);
+    height: 100%;
 }
 
 .counter-box .th-h1 {
@@ -323,6 +339,9 @@ section {
 /* ------------- One Stop Scetion End ------------- */
 
 /* 09.INDUSTRIES WE WORK IN Start ------------------------------ */
+.industries{
+    padding-bottom: 150px;
+}
 .industries-h .fas {
     color: var(--th-color-1);
 }
@@ -401,6 +420,25 @@ section {
 
 .how-we-work-box {
     margin-top: 100px;
+    position: relative;
+}
+.how-we-work-box::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--th-color-2);
+    width: 2px;
+    height: 0%;
+    transition: all 2s;
+}
+.how-we-work-box.active::after{
+    height: 100%;
+}
+.work-box-h{
+    position: relative;
+    z-index: 1;
 }
 
 .work-box-1 {
@@ -440,8 +478,8 @@ section {
 .center-slider .slick-slide {
     background-color: var(--th-color-1);
     color: #FFF;
-    height: 200px;
-    min-height: 600px;
+    height: 650px;
+    /* min-height: 600px; */
     margin: 0 15px 0 0;
     display: flex;
     align-items: center;
@@ -523,10 +561,8 @@ section {
 }
 
 .testimonial-box .test-text .th-p {
-    font-size: 20px;
     line-height: 150%;
     text-align: center;
-
 }
 
 .testimonial-box .test-title h4 {
@@ -739,25 +775,29 @@ section {
 .all-pro-left .th-h1 {
     list-style: none;
     color: var(--th-color-1);
-    font-size:18px;
+    font-size: 18px;
 }
 
 .all-pro-right .th-h1 {
     list-style: none;
     color: #AEAEAE;
-    font-size:18px;
+    font-size: 18px;
 }
-.all-project .pro-box{
+
+.all-project .pro-box {
     position: relative;
     cursor: pointer;
 }
-.all-project .pro-box .th-h1{
-font-size: 32px;
+
+.all-project .pro-box .th-h1 {
+    font-size: 32px;
 }
-.all-project .pro-box .pro-img img{
+
+.all-project .pro-box .pro-img img {
     width: 100%;
 }
-.all-project .pro-box .pro-text{
+
+.all-project .pro-box .pro-text {
     width: 100%;
     height: 100%;
     padding: 50px 80px;
@@ -766,17 +806,19 @@ font-size: 32px;
     left: 0;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     visibility: hidden;
     transition: all .5s;
 }
-.all-project .pro-box:hover .pro-text{
+
+.all-project .pro-box:hover .pro-text {
     opacity: 1;
     visibility: visible;
 }
-.all-project .pro-box ul{
+
+.all-project .pro-box ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -785,29 +827,136 @@ font-size: 32px;
 /* ------------- Project Banner Section End ------------- */
 
 /* 18.Project Banner Section Start ------------------------------ */
-.service{
+.service {
     background-color: var(--th-color-1);
 }
-.service .service-box{
+
+.service .service-box {
+    height: 100%;
     padding: 30px;
     border: 1px solid var(--th-color-2);
     border-radius: 4px;
 }
-.service .service-box .service-img img{
+
+.service .service-box .service-img img {
     width: 100%;
     max-width: 80px;
 }
-.service .service-box h4.th-h1{
+
+.service .service-box .service-img .fal {
+    font-size: 60px;
+    color: var(--th-color-2);
+}
+
+.service .service-box h4.th-h1 {
     color: #FFF;
     font-size: 28px;
     font-weight: 400;
-    line-height: 120%; /* 48px */
+    line-height: 120%;
+    /* 48px */
 }
-.service .service-box .th-p p{
+
+.service .service-box .th-p p {
     color: #FFF;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
 }
+
 /* ------------- Project Banner Section End ------------- */
+
+/* 19.Project Banner Section Start ------------------------------ */
+.contact-form {
+    padding: 150px 0 100px 0;
+    background-color: var(--th-color-1);
+}
+
+.contact-form .th-h1 {
+    font-size: 120px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.form-box {
+    margin-top: 100px;
+}
+
+.form-inp {
+    margin-bottom: 20px;
+}
+
+.form-inp input,
+.form-inp textarea {
+    font-size: 26px;
+    color: var(--th-color-2);
+    border: none;
+    border-bottom: 2px solid var(--th-color-2);
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.form-inp input::placeholder,
+.form-inp textarea::placeholder {
+    font-family: var(--th-font-1);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: left;
+    color: var(--th-color-2);
+    /* Placeholder text color */
+}
+
+.form-inp button {
+    background-color: transparent !important;
+}
+
+/* ------------- Project Banner Section End ------------- */
+
+#footer {
+    background-color: #C6E3FF;
+    padding-top: 100px;
+}
+
+.footer .foot-top-link ul {
+    list-style-type: none !important;
+}
+
+.footer .foot-top-link a {
+    font-family: var(--th-font-1);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.footer .foot-bottom-link a {
+    font-family: var(--th-font-1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer .th-h1 {
+    color: var(--th-color-3) !important;
+}
+
+.foot-contact-link .th-btn-1 {
+    background-color: var(--th-color-3);
+    border: none;
+}
+
+.foot-social a .fab {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--th-color-3);
+    border: 2px solid var(--th-color-3);
+}

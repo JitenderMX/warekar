@@ -1,7 +1,9 @@
 // Loading Common Element Using External File
 $("#header").load("header.html");
-// $("#footer").load("footer.html");
+$("#footer").load("footer.html");
 
+ // Wait for the document to be ready
+ 
 
 // AOS Js (Reveal Animation)
 // AOS.init();
