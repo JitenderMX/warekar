@@ -631,13 +631,14 @@ section {
 }
 
 .expert-profile {
-    padding: 250px 0 50px 0 !important;
+    padding: 250px 20px 50px 20px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .expert-profile.mid {
+    height: 100%;
     border-left: 1px solid #928D8D;
     border-right: 1px solid #928D8D;
 }

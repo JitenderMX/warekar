@@ -126,6 +126,17 @@
     .how-we-work .how-we-work-h h2.th-h1 {
         font-size: 32px;
     }
+    /* About Page  */
+    .expert-profile.mid {
+        height: 100%;
+        border-left: 1px solid #928D8D;
+        border-right: 0px solid #928D8D;
+    }
+    .expert-profile.right {
+        height: 100%;
+        padding-top: 50px !important;
+        border-top: 1px solid #928D8D;
+    }
 }
 
 
