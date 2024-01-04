@@ -150,7 +150,9 @@
     .how-we-work .how-we-work-h h2.th-h1 {
         font-size: 32px;
     }
-
+    .carousel-inner {
+        height: 600px;
+    }
     /* About Page  */
     .expert-profile {
         padding-top: 150px;
@@ -175,6 +177,7 @@
     #header .navbar-brand img{
         max-width: 150px;
     }
+    
 }
 
 
@@ -189,6 +192,9 @@
     /* Home Page  */
     .how-we-work-box.active::after {
         height: 0%;
+    }
+    .counter-box {
+        padding: 50px 20px;
     }
 
     /* contact page  */
