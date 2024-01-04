@@ -649,6 +649,9 @@ section {
     margin: auto;
 }
 
+.expert-profile h3 {
+    text-align: center;
+}
 .expert-profile h6 {
     color: #4F4F4F;
     font-weight: 400;
@@ -772,6 +775,9 @@ section {
     max-width: 600px;
     margin: auto;
 }
+.all-project{
+    padding-bottom: 100px;
+}
 
 .all-pro-left .th-h1 {
     list-style: none;
@@ -837,6 +843,11 @@ section {
     padding: 30px;
     border: 1px solid var(--th-color-2);
     border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.service .service-box:hover {
+    background-color: var(--th-color-2);
 }
 
 .service .service-box .service-img img {
@@ -844,9 +855,15 @@ section {
     max-width: 80px;
 }
 
+
+
 .service .service-box .service-img .fal {
     font-size: 60px;
     color: var(--th-color-2);
+    transition: all .5s;
+}
+.service .service-box:hover .fal {
+    color: var(--th-color-3);
 }
 
 .service .service-box h4.th-h1 {
@@ -855,16 +872,22 @@ section {
     font-weight: 400;
     line-height: 120%;
     /* 48px */
+    transition: all .5s;
 }
-
+.service .service-box:hover h4.th-h1 {
+    color: var(--th-color-3);
+}
 .service .service-box .th-p p {
     color: #FFF;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
+    transition: all .5s;
 }
-
+.service .service-box:hover .th-p p {
+    color: var(--th-color-3);
+}
 /* ------------- Project Banner Section End ------------- */
 
 /* 19.Project Banner Section Start ------------------------------ */
