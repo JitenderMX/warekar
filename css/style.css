@@ -869,7 +869,7 @@ section {
     transition: all .5s;
 }
 .service .service-box:hover .fal {
-    color: var(--th-color-3);
+    color: var(--th-color-4);
 }
 
 .service .service-box h4.th-h1 {
@@ -881,7 +881,7 @@ section {
     transition: all .5s;
 }
 .service .service-box:hover h4.th-h1 {
-    color: var(--th-color-3);
+    color: var(--th-color-4);
 }
 .service .service-box .th-p p {
     color: #FFF;
@@ -892,7 +892,7 @@ section {
     transition: all .5s;
 }
 .service .service-box:hover .th-p p {
-    color: var(--th-color-3);
+    color: var(--th-color-4);
 }
 /* ------------- Project Banner Section End ------------- */
 
