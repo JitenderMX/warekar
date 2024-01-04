@@ -319,6 +319,8 @@ section {
 /* 07.Empower Brand Scetion Start ------------------------------ */
 .empower-brand {
     background-color: var(--th-color-1);
+    overflow: hidden;
+
 }
 
 .brand-h {
@@ -403,6 +405,7 @@ section {
 /* 10.HOW WE WORK IN Start ------------------------------ */
 .how-we-work {
     background-color: var(--th-color-1);
+    overflow: hidden;
 }
 
 .how-we-work .how-we-work-h h6.th-h1 {
@@ -425,6 +428,7 @@ section {
 .how-we-work-box::after{
     content: " ";
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -438,7 +442,7 @@ section {
 }
 .work-box-h{
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .work-box-1 {
@@ -609,6 +613,7 @@ section {
 .experts {
     border-top: 1px solid var(--th-color-3);
     position: relative;
+    overflow: hidden;
 }
 
 .experts .experts-heading {
@@ -616,6 +621,7 @@ section {
     top: 50px;
     left: 0;
     background-color: var(--th-color-2);
+    z-index: 1;
 }
 
 .experts .th-h1 {
