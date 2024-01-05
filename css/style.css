@@ -68,7 +68,7 @@ p {
     color: var(--th-color-3);
     font-family: var(--th-font-1);
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 120%;
 }
 
@@ -119,7 +119,7 @@ p {
     font-family: var(--th-font-1);
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
     /* 29.626px */
 }
@@ -325,6 +325,11 @@ section {
     background-color: var(--th-color-1);
     overflow: hidden;
 
+}
+.empower-brand img{
+    max-width: 150px;
+    width: 100%;
+    margin: auto;
 }
 
 .brand-h {
