@@ -91,6 +91,16 @@
     .slick-track {
         background-color: var(--th-color-1);
     }
+     /* nav  */
+     #header.logo-white .navbar-collapse {
+        background-color: var(--th-color-1);
+        padding: 30px 0;
+    }
+
+    #header.logo-blue .navbar-collapse {
+        background-color: var(--th-color-2);
+        padding: 30px 0;
+    }
 }
 
 
@@ -105,16 +115,7 @@
         padding: 10px 18px;
     }
 
-    /* nav  */
-    #header.logo-white .navbar-collapse {
-        background-color: var(--th-color-1);
-        padding: 30px 0;
-    }
-
-    #header.logo-blue .navbar-collapse {
-        background-color: var(--th-color-2);
-        padding: 30px 0;
-    }
+   
 
 
 
@@ -152,6 +153,9 @@
     }
     .carousel-inner {
         height: 600px;
+    }
+    .service-h-box .th-h1{
+        font-size: 24px;
     }
     /* About Page  */
     .expert-profile {

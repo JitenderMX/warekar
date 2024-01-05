@@ -42,6 +42,10 @@ Spacing System
     --th-font-1: 'Inter', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
     color: var(--th-color-3);
@@ -341,9 +345,10 @@ section {
 /* ------------- One Stop Scetion End ------------- */
 
 /* 09.INDUSTRIES WE WORK IN Start ------------------------------ */
-.industries{
+.industries {
     padding-bottom: 150px;
 }
+
 .industries-h .fas {
     color: var(--th-color-1);
 }
@@ -425,7 +430,8 @@ section {
     margin-top: 100px;
     position: relative;
 }
-.how-we-work-box::after{
+
+.how-we-work-box::after {
     content: " ";
     position: absolute;
     z-index: -1;
@@ -437,10 +443,12 @@ section {
     height: 0%;
     transition: all 2s;
 }
-.how-we-work-box.active::after{
+
+.how-we-work-box.active::after {
     height: 100%;
 }
-.work-box-h{
+
+.work-box-h {
     position: relative;
     z-index: 2;
 }
@@ -658,6 +666,7 @@ section {
 .expert-profile h3 {
     text-align: center;
 }
+
 .expert-profile h6 {
     color: #4F4F4F;
     font-weight: 400;
@@ -781,7 +790,8 @@ section {
     max-width: 600px;
     margin: auto;
 }
-.all-project{
+
+.all-project {
     padding-bottom: 100px;
 }
 
@@ -852,6 +862,7 @@ section {
     cursor: pointer;
     transition: all .5s;
 }
+
 .service .service-box:hover {
     background-color: var(--th-color-2);
 }
@@ -868,6 +879,7 @@ section {
     color: var(--th-color-2);
     transition: all .5s;
 }
+
 .service .service-box:hover .fal {
     color: var(--th-color-4);
 }
@@ -880,9 +892,11 @@ section {
     /* 48px */
     transition: all .5s;
 }
+
 .service .service-box:hover h4.th-h1 {
     color: var(--th-color-4);
 }
+
 .service .service-box .th-p p {
     color: #FFF;
     text-align: center;
@@ -891,9 +905,11 @@ section {
     line-height: 120%;
     transition: all .5s;
 }
+
 .service .service-box:hover .th-p p {
     color: var(--th-color-4);
 }
+
 /* ------------- Project Banner Section End ------------- */
 
 /* 19.Project Banner Section Start ------------------------------ */
@@ -946,6 +962,8 @@ section {
 
 /* ------------- Project Banner Section End ------------- */
 
+/* 20.Footer Section Start ------------------------------ */
+
 #footer {
     background-color: #C6E3FF;
     padding-top: 100px;
@@ -990,3 +1008,61 @@ section {
     color: var(--th-color-3);
     border: 2px solid var(--th-color-3);
 }
+
+/* ------------- Footer Section End ------------- */
+
+
+/* 21.Footer Section Start ------------------------------ */
+.pro-upper a {
+    font-family: var(--th-font-1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--th-color-1);
+    text-decoration: none;
+}
+
+.pro-lower li {
+    color: var(--th-color-4);
+}
+
+.project-main {
+    padding-bottom: 100px;
+}
+
+.project-arrow .far {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--th-color-4);
+    border: 2px solid var(--th-color-4);
+    cursor: pointer;
+}
+
+/* ------------- Footer Section End ------------- */
+
+
+/* 22.Service Section Start ------------------------------ */
+.service-h{
+    background-color: var(--th-color-1);
+}
+.service-h-box {
+    border-bottom: 1px solid var(--th-color-2);
+}
+.service-h-box .th-h1{
+    font-size: 34px;
+    font-weight: 400;
+    text-align: right;
+}
+.service-h-box .th-p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 10px;
+}
+/* ------------- Service Section End ------------- */

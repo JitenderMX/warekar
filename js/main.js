@@ -2,83 +2,147 @@
 $("#header").load("header.html");
 $("#footer").load("footer.html");
 
- // Wait for the document to be ready
- 
+// header active
+  // Get the body ID
+  var bodyId = $("body").attr("id");
+
+  // Find the element with data-nav matching the body ID
+  var targetElement = $('.navbar-nav [data-nav="' + bodyId + '"]');
+
+  // Add the 'active' class to the found element
+  targetElement.addClass("active");
+
+  $(window).scroll(function () {
+    $("#header").toggleClass("active-bg", $(this).scrollTop() > 100);
+  }); // Trigger scroll event on page load
+
 
 // AOS Js (Reveal Animation)
 AOS.init();
 
+$('.how-we-work-box').hover(
+    function () {
+        $(this).addClass('active');
+    }
+);
+
+// Home Page Center Slider 
+$('.center-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    arrows: false,
+    infinite: true,
+    dots: false,
+    speed: 300,
+    centerPadding: '20px',
+    infinite: true,
+    autoplaySpeed: 5000,
+    autoplay: true,
+    responsive: [
+        {
+            breakpoint: 960,
+            settings: {
+                centerPadding: '40px',
+                slidesToShow: 2,
+                centerMode: false
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                centerPadding: '40px',
+                slidesToShow: 1,
+                centerMode: false
+            }
+        }
+    ]
+});
+
+$('#center-arrow-prev').on('click', function () {
+    $('.center-slider').slick('slickPrev');
+});
+
+$('#center-arrow-next').on('click', function () {
+    $('.center-slider').slick('slickNext');
+});
 
 
-// // Form Validation on submit
-// $(document).ready(function () {
-//   $("form").submit(function (event) {
-//       var fullName = $("#full-name").val();
-//       var phone = $("#phone").val();
-//       var email = $("#email").val();
-//       var message = $("#message").val();
-//       var isValid = true;
+// Project Pages Slider 
+$(".project-slider").slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    infinite: true,
+    centerMode: false,
+});
+$("#project-slider-prev").on("click", function () {
+    $(".project-slider").slick("slickPrev");
+});
 
-//       // Validate full name (not empty)
-//       if (fullName.trim() === "") {
-//           isValid = false;
-//           alert("Please enter your full name.");
-//       }
+$("#project-slider-next").on("click", function () {
+    $(".project-slider").slick("slickNext");
+});
 
-//       // Validate phone number using regular expression
-//       var phoneRegex = /^[0-9]{10}$/; // Assumes a 10-digit phone number
-//       if (!phone.match(phoneRegex)) {
-//           isValid = false;
-//           alert("Please enter a valid 10-digit phone number.");
-//       }
+// Home Page Counter Section
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
 
-//       // Validate email using regular expression
-//       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//       if (!email.match(emailRegex)) {
-//           isValid = false;
-//           alert("Please enter a valid email address.");
-//       }
+// Check if the .counter section is in the viewport on scroll
+$(window).on('scroll', function () {
+    if (isInViewport($('.counter')[0])) {
+        // Iterate over each .th-h1 element and animate the counter
+        $('.th-h1').each(function () {
+            var countTo = $(this).attr('data-count');
+            $(this).prop('Counter', 0).animate({
+                Counter: countTo
+            }, {
+                duration: 1000, // Adjust the duration as needed
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+        // Unbind the scroll event to prevent multiple animations
+        $(window).off('scroll');
+    }
+});
 
-//       // Validate message (not empty)
-//       if (message.trim() === "") {
-//           isValid = false;
-//           alert("Please enter a message.");
-//       }
+// Trigger the scroll event to check if the section is initially in the viewport
+$(window).scroll();
 
-//       if (!isValid) {
-//           event.preventDefault(); // Prevent form submission if validation fails
-//       }
-//   });
-// });
+// Home Page Industries Section Slider
+function checkCarouselState() {
+    var currentIndex = $('#carouselExampleIndicators .carousel-item.active').index();
+    var totalItems = $('#carouselExampleIndicators .carousel-item').length - 1;
 
+    if (currentIndex === 0) {
+        $('#carouselExampleIndicators .carousel-control-prev').hide();
+        $('#carouselExampleIndicators .carousel-control-next').show();
+    } else if (currentIndex === totalItems) {
+        $('#carouselExampleIndicators .carousel-control-prev').show();
+        $('#carouselExampleIndicators .carousel-control-next').hide();
+    } else {
+        $('#carouselExampleIndicators .carousel-control-prev').show();
+        $('#carouselExampleIndicators .carousel-control-next').show();
+    }
+}
 
+$('#carouselExampleIndicators').on('slid.bs.carousel', function () {
+    checkCarouselState();
+});
+$(window).on('load', function () {
+    checkCarouselState();
+});
 
-// // -----====== Counter Player =======-----
-// var counter = $(".counter").offset().top - 300;
-// $(window).scroll(function () {
-//   var scrTop = $(window).scrollTop();
-//   if (scrTop > counter) {
-//     $(".num").each(function () {
-//       var $this = $(this),
-//         countTo = $this.attr("data-count");
-
-//       $({ countNum: $this.text() }).animate(
-//         {
-//           countNum: countTo,
-//         },
-
-//         {
-//           duration: 1000,
-//           easing: "linear",
-//           step: function () {
-//             $this.text(Math.floor(this.countNum));
-//           },
-//           complete: function () {
-//             $this.text(this.countNum);
-//             //alert('finished');
-//           },
-//         }
-//       );
-//     });
-//   }
-// });
