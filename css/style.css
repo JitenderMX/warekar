@@ -146,7 +146,7 @@ p {
 }
 
 section {
-    overflow-x: hidden;
+    overflow: hidden !important;
 }
 
 .container-xxl {
