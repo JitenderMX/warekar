@@ -717,6 +717,12 @@ section {
 .about-testimonial {
     position: relative;
 }
+.about-testimonial .carousel-inner{
+    height: auto;
+}
+.about-testimonial #slider-about-testimonal .fas{
+   color: var(--th-color-3) !important;
+}
 
 .about-test-img img {
     width: 100%;
