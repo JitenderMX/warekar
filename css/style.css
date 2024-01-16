@@ -977,7 +977,7 @@ section {
 
 #footer {
     background-color: #C6E3FF;
-    padding-top: 100px;
+    padding: 100px 0 50px 0;
 }
 
 .footer .foot-top-link ul {
@@ -986,16 +986,18 @@ section {
 
 .footer .foot-top-link a {
     font-family: var(--th-font-1);
+    color: #3f3844;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-
 }
 
+.footer .foot-text p,
 .footer .foot-bottom-link a {
     font-family: var(--th-font-1);
+    color: #3f3844;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -1010,10 +1012,12 @@ section {
     border: none;
 }
 
-.foot-social a .fab {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+.foot-top-link a .fab, 
+    .foot-top-link .far {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
     border-radius: 50%;
     text-align: center;
     color: var(--th-color-3);
