@@ -91,8 +91,9 @@
     .slick-track {
         background-color: var(--th-color-1);
     }
-     /* nav  */
-     #header.logo-white .navbar-collapse {
+
+    /* nav  */
+    #header.logo-white .navbar-collapse {
         background-color: var(--th-color-1);
         padding: 30px 0;
     }
@@ -115,7 +116,7 @@
         padding: 10px 18px;
     }
 
-   
+
 
 
 
@@ -151,12 +152,15 @@
     .how-we-work .how-we-work-h h2.th-h1 {
         font-size: 32px;
     }
+
     .carousel-inner {
         height: 600px;
     }
-    .service-h-box .th-h1{
+
+    .service-h-box .th-h1 {
         font-size: 24px;
     }
+
     /* About Page  */
     .expert-profile {
         padding-top: 100px;
@@ -178,10 +182,11 @@
         margin: 0px;
         padding-top: 40px;
     }
-    #header .navbar-brand img{
+
+    #header .navbar-brand img {
         max-width: 150px;
     }
-    
+
 }
 
 
@@ -197,8 +202,17 @@
     .how-we-work-box.active::after {
         height: 0%;
     }
+
     .counter-box {
         padding: 50px 20px;
+    }
+
+    /* About Us  */
+    .center-arrow .far,
+    #slider-about-testimonal .far {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
     }
 
     /* contact page  */
@@ -216,7 +230,6 @@
     }
 
     #footer {
-        background-color: #C6E3FF;
         padding: 50px 0;
     }
 
@@ -230,17 +243,22 @@
 
     /* project page  */
     .all-project .pro-box .pro-text {
-        padding: 30px;
+        padding: 15px;
         opacity: 1;
         visibility: visible;
         cursor: auto;
+    }
+
+    .all-project .pro-box .th-h1 {
+        font-size: 22px;
     }
 
     /* service page  */
     .service .service-box h4.th-h1 {
         font-size: 22;
     }
-    .service .service-box .service-img .fal{
+
+    .service .service-box .service-img .fal {
         font-size: 44px;
     }
 }

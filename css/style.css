@@ -42,7 +42,7 @@ Spacing System
     --th-font-1: 'Inter', sans-serif;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -326,7 +326,8 @@ section {
     overflow: hidden;
 
 }
-.empower-brand img{
+
+.empower-brand img {
     max-width: 150px;
     width: 100%;
     margin: auto;
@@ -549,7 +550,15 @@ section {
     /* transform: translateY(-50%); */
 }
 
-.center-arrow .far {
+#slider-about-testimonal .carousel-control-next,
+#slider-about-testimonal .carousel-control-prev {
+    top: auto;
+    bottom: 60px;
+}
+
+
+.center-arrow .far,
+#slider-about-testimonal .far {
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -717,11 +726,13 @@ section {
 .about-testimonial {
     position: relative;
 }
-.about-testimonial .carousel-inner{
+
+.about-testimonial .carousel-inner {
     height: auto;
 }
-.about-testimonial #slider-about-testimonal .fas{
-   color: var(--th-color-3) !important;
+
+.about-testimonial #slider-about-testimonal .fas {
+    color: var(--th-color-3) !important;
 }
 
 .about-test-img img {
@@ -976,8 +987,9 @@ section {
 /* 20.Footer Section Start ------------------------------ */
 
 #footer {
-    background-color: #C6E3FF;
-    padding: 50px 0 50px 0;
+    background-color: var(--th-color-1);
+    padding: 50px 0 40px 0;
+    border-top:1px solid var(--th-color-2);
 }
 
 .footer .foot-top-link ul {
@@ -986,42 +998,52 @@ section {
 
 .footer .foot-top-link a {
     font-family: var(--th-font-1);
-    color: #3f3844;
+    color: var(--th-color-2);
     font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
+    font-weight: 400;
+    line-height: 120%;
     letter-spacing: 0em;
     text-align: left;
 }
 
-.footer .foot-text p,
+.foot-top-link .fas {
+    color: var(--th-color-2);
+}
+
+/* .footer .foot-text p,
 .footer .foot-bottom-link a {
     font-family: var(--th-font-1);
     color: #3f3844;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-}
+} */
 
 .footer .th-h1 {
     color: var(--th-color-3) !important;
 }
 
-.foot-contact-link .th-btn-1 {
-    background-color: var(--th-color-3);
-    border: none;
-}
 
-.foot-top-link a .fab, 
-    .foot-top-link .far {
+.foot-top-link a .fab,
+.foot-top-link .far {
     width: 35px;
     height: 35px;
     line-height: 35px;
     font-size: 20px;
     border-radius: 50%;
     text-align: center;
-    color: var(--th-color-3);
-    border: 2px solid var(--th-color-3);
+    color: var(--th-color-2);
+    border: 2px solid var(--th-color-2);
+}
+
+.foot-top-link .th-btn-1 {
+    background-color: var(--th-color-2);
+    color: var(--th-color-1) !important;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.foot-top-link .th-btn-1 .fas {
+    color: var(--th-color-1) !important;
 }
 
 /* ------------- Footer Section End ------------- */
@@ -1063,21 +1085,25 @@ section {
 
 
 /* 22.Service Section Start ------------------------------ */
-.service-h{
+.service-h {
     background-color: var(--th-color-1);
 }
+
 .service-h-box {
     border-bottom: 1px solid var(--th-color-2);
 }
-.service-h-box .th-h1{
+
+.service-h-box .th-h1 {
     font-size: 34px;
     font-weight: 400;
     text-align: right;
 }
-.service-h-box .th-p{
+
+.service-h-box .th-p {
     font-size: 14px;
     font-weight: 400;
     text-align: right;
     margin-top: 10px;
 }
+
 /* ------------- Service Section End ------------- */
