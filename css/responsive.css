@@ -5,6 +5,13 @@
     --th-font-1: 'Inter', sans-serif;
 }
 
+/* Extra large devices (1400px and down) */
+
+@media screen and (max-width: 1440px) {
+    .container-xxl{
+        --bs-gutter-x:3rem;
+    }
+}
 /* Extra large devices (1200px and down) */
 
 @media screen and (max-width: 1200px) {
@@ -196,6 +203,9 @@
 
     .th-h1 {
         font-size: 32px;
+    }
+    .counter-box .th-h1 {
+        font-size: 50px;
     }
 
     /* Home Page  */

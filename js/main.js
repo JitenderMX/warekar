@@ -38,7 +38,7 @@ $('.center-slider').slick({
     centerPadding: '20px',
     infinite: true,
     autoplaySpeed: 5000,
-    autoplay: true,
+    autoplay: false,
     responsive: [
         {
             breakpoint: 960,

@@ -150,7 +150,7 @@ section {
 }
 
 .container-xxl {
-    max-width: 1440px !important;
+    /* max-width: 1440px !important; */
     margin: auto;
     /* overflow-x: hidden; */
 }
@@ -1000,7 +1000,7 @@ section {
     font-family: var(--th-font-1);
     color: var(--th-color-2);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 120%;
     letter-spacing: 0em;
     text-align: left;
