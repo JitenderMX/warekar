@@ -307,7 +307,7 @@ section {
 
 .counter-box .th-h1 {
     color: var(--th-color-1);
-    font-size: 130px;
+    font-size: 100px;
     text-align: center;
 }
 
@@ -496,7 +496,7 @@ section {
 .center-slider .slick-slide {
     background-color: var(--th-color-1);
     color: #FFF;
-    height: 650px;
+    height: 500px !important;
     /* min-height: 600px; */
     margin: 0 15px 0 0;
     display: flex;
@@ -579,35 +579,40 @@ section {
 }
 
 .testimonial-box .test-img img {
-    width: 70px !important;
+    width: 100%;
+    max-width: 70px ;
+}
+.testimonial-box .test-img img {
+    width: 100%;
+    max-width: 70px ;
 }
 
 .testimonial-box .test-text {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .testimonial-box .test-text .th-p {
     line-height: 150%;
     text-align: center;
+    font-size: 15px;
 }
 
+.testimonial-box .test-title h5,
 .testimonial-box .test-title h4 {
     font-family: var(--th-font-1);
     color: var(--th-color-2);
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 200;
     line-height: 120%;
     text-align: center;
 }
+.testimonial-box .test-title h4 {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 200;
+}
 
 .testimonial-box .test-title h5 {
-    font-family: var(--th-font-1);
-    color: var(--th-color-2);
     font-size: 16px;
     font-weight: 400;
-    line-height: 120%;
-    text-align: center;
 }
 
 /* ------------- Testimonial Section End ------------- */

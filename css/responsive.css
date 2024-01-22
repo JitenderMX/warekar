@@ -8,18 +8,32 @@
 /* Extra large devices (1400px and down) */
 
 @media screen and (max-width: 1440px) {
-    .container-xxl{
-        --bs-gutter-x:3rem;
+    .container-xxl {
+        --bs-gutter-x: 3rem;
+    }
+
+    .testimonial-box .test-text .th-p {
+        line-height: 130%;
+        font-size: 14px;
+    }
+
+    .testimonial-box .test-title h4,
+    .testimonial-box .test-title h5 {
+        font-size: 14px;
     }
 }
+
 /* Extra large devices (1200px and down) */
 
 @media screen and (max-width: 1200px) {
 
     /* Default slide */
     .center-slider .slick-slide {
-        height: 800px;
+        height: 650px !important;
     }
+
+
+
 }
 
 
@@ -43,6 +57,11 @@
     .work-box-text .th-h1 {
         font-size: 24px;
         margin-bottom: 10px;
+    }
+    .counter-box .th-h1 {
+        color: var(--th-color-1);
+        font-size: 80px;
+        text-align: center;
     }
 
     /* Project page  */
@@ -204,6 +223,7 @@
     .th-h1 {
         font-size: 32px;
     }
+
     .counter-box .th-h1 {
         font-size: 50px;
     }

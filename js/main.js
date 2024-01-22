@@ -41,7 +41,7 @@ $('.center-slider').slick({
     autoplay: false,
     responsive: [
         {
-            breakpoint: 960,
+            breakpoint: 992,
             settings: {
                 centerPadding: '40px',
                 slidesToShow: 2,
