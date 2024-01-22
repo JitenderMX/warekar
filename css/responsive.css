@@ -69,13 +69,7 @@
         padding: 30px 50px;
     }
 
-    .all-project .pro-box .th-h1 {
-        font-size: 26px;
-    }
 
-    .all-project .pro-box .th-p {
-        font-size: 16px;
-    }
 
     /* contact page  */
     .contact-form .th-h1 {
@@ -189,9 +183,14 @@
 
     /* About Page  */
     .expert-profile {
-        padding-top: 100px;
+        padding-top: 150px !important;
     }
-
+    .expert-profile .exp-img img{
+        max-width: 200px;
+    }
+    .about-banner{
+        padding: 150px 0 50px 0;
+    }
     .expert-profile.mid {
         height: 100%;
         border-left: 1px solid #928D8D;
@@ -212,7 +211,26 @@
     #header .navbar-brand img {
         max-width: 150px;
     }
+    /* service page  */
+    .project-banner{
+        padding: 150px 0 50px 0;
+    }
+    .sec-p-100{
+        padding: 50px 0;
+    }
+    /* project page  */
+    .all-project .pro-box .pro-text {
+        opacity: 1;
+        visibility: visible;
+        cursor: auto;
+    }
+    .all-project .pro-box .th-h1 {
+        font-size: 24px;
+    }
 
+    .all-project .pro-box .th-p {
+        font-size: 16px;
+    }
 }
 
 
@@ -272,18 +290,16 @@
     }
 
     /* project page  */
-    .all-project .pro-box .pro-text {
-        padding: 15px;
-        opacity: 1;
-        visibility: visible;
-        cursor: auto;
-    }
+  
 
-    .all-project .pro-box .th-h1 {
+    /* .all-project .pro-box .th-h1 {
         font-size: 22px;
-    }
+    } */
 
     /* service page  */
+    .all-project .pro-box .pro-text {
+        padding: 15px;
+    }
     .service .service-box h4.th-h1 {
         font-size: 22;
     }
