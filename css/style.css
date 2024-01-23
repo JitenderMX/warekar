@@ -237,7 +237,7 @@ section {
 }
 
 #header.logo-blue .navbar-expand-lg .navbar-nav .nav-link {
-    color: var(--th-color-3);
+    color: #AEAEAE;
 }
 
 #header.logo-blue .navbar-expand-lg .navbar-nav .nav-link.active {
