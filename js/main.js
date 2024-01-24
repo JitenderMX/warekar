@@ -2,19 +2,6 @@
 $("#header").load("header.html");
 $("#footer").load("footer.html");
 
-// header active
-  // Get the body ID
-    var bodyId = $("body").attr("id");
-
-    // Find the element with data-nav matching the body ID
-    var targetElement = $('.navbar-nav [data-nav="' + bodyId + '"]');
-
-    // Add the 'active' class to the found element
-    targetElement.addClass("active");
-
-    $(window).scroll(function () {
-      $("#header").toggleClass("active-bg", $(this).scrollTop() > 100);
-    }); // Trigger scroll event on page load
 
 
 // AOS Js (Reveal Animation)
