@@ -736,7 +736,7 @@ section {
 /* 12.About Banner Section Start ------------------------------ */
 .about-banner {
     background-color: var(--th-color-1);
-    padding: 150px 0 100px 0;
+    padding: 150px 0 80px 0;
     text-align: center;
 }
 
@@ -915,10 +915,13 @@ section {
 
 /* 17.Project Banner Section Start ------------------------------ */
 .project-banner {
-    padding: 150px 0 100px 0;
+    padding: 150px 0 80px 0;
     text-align: center;
 }
-
+.project-slider img{
+    width: 100 !important;
+    max-width: 990px;
+}
 .project-banner .th-h1 .span-1 {
     color: #AEAEAE;
 }
@@ -1057,7 +1060,7 @@ section {
 
 /* 19.Project Banner Section Start ------------------------------ */
 .contact-form {
-    padding: 150px 0 100px 0;
+    padding: 150px 0 80px 0;
     background-color: var(--th-color-1);
 }
 
@@ -1274,3 +1277,14 @@ section {
 }
 
 /* ------------- Service Section End ------------- */
+
+#thankyou-page{
+    background-color: var(--th-color-1);
+}
+.go-back a{
+ transition: all .5s;
+}
+.go-back a:hover{
+    color: var(--th-color-3) !important;
+    text-decoration: underline;
+}
