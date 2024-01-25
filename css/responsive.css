@@ -292,7 +292,7 @@
     }
 
     #footer {
-        padding: 50px 0;
+        padding: 50px 0 0 0;
     }
 
     .sec-p-100 {
@@ -320,5 +320,9 @@
 
     .service .service-box .service-img .fal {
         font-size: 44px;
+    }
+    /* footer  */
+    .foot-sitemap ul{
+        border: 0px solid var(--th-color-2);
     }
 }
