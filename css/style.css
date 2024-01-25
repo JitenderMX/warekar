@@ -973,7 +973,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
     transition: all .5s;
@@ -1137,6 +1137,7 @@ section {
 }
 .mediax a{
     color: var(--th-color-2);
+    font-size: 14px !important;
 }
 .foot-logo img {
     max-width: 200px;
