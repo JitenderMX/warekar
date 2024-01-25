@@ -919,7 +919,7 @@ section {
     text-align: center;
 }
 .project-slider img{
-    width: 100 !important;
+    width: 100% !important;
     max-width: 990px;
 }
 .project-banner .th-h1 .span-1 {
