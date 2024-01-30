@@ -245,6 +245,12 @@
     .all-project .pro-box .th-p {
         font-size: 16px;
     }
+    .project-arrow {
+        position: static;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+    }
 }
 
 
