@@ -977,8 +977,8 @@ section {
     flex-direction: column;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     transition: all .5s;
 }
 
