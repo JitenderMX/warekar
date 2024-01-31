@@ -251,6 +251,13 @@
         bottom: auto;
         z-index: 1;
     }
+    /* footer  */
+    
+#footer .foot-mid{
+    border-top: 1px solid var(--th-color-2);
+    border-bottom: 1px solid var(--th-color-2);
+}
+
 }
 
 

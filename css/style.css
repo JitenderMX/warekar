@@ -217,6 +217,7 @@ section {
     left: 0;
     width: 100%;
     z-index: 100;
+    border-bottom: 1px solid var(--th-color-2);
     transition: all .5s;
 }
 
@@ -1002,6 +1003,7 @@ section {
 /* 18.Project Banner Section Start ------------------------------ */
 .service {
     background-color: var(--th-color-1);
+    border-bottom:1px solid var(--th-color-2) ;
 }
 
 .service .service-box {
@@ -1142,7 +1144,7 @@ section {
     padding: 50px 0 0px 0;
     /* border-top: 1px solid var(--th-color-2); */
     position: relative;
-    bottom: -10px;
+    /* bottom: -10px; */
 }
 .mediax{
     background-color: var(--th-color-1);
@@ -1154,6 +1156,10 @@ section {
 .foot-logo img {
     max-width: 200px;
     width: 100%;
+}
+
+#footer .foot-mid{
+    border-bottom: 1px solid var(--th-color-2);
 }
 
 .footer .foot-top-link ul {
@@ -1169,7 +1175,7 @@ section {
     color: var(--th-color-2);
     font-size: 16px;
     font-weight: 200;
-    line-height: 120%;
+    line-height: 150%;
     letter-spacing: 0em;
     text-align: left;
 }
